@@ -34,15 +34,17 @@ def list(songs)
 end
 
 def play(songs)
+  selected_song = ""
   puts "Please enter a song name or number:"
   input = gets.strip
   songs.each do | song |
     if song == input
-      puts "Playing #{song}"
-    else
-      puts "Invalid input, please try again"
-    end
+      selected_song = song
   end
+  if selected_song == ""
+    
+  
+  
 end
 
 def exit_jukebox
