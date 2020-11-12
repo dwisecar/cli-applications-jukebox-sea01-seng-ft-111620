@@ -49,11 +49,22 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   while input != "exit" do
     puts "Please enter a command:"
     input = gets.strip
     
+    case input
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+    else
+        
     
 end
 
