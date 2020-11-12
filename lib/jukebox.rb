@@ -32,7 +32,7 @@ def play(songs)
   input = gets.strip
   
   songs.each.with_index(1) do | song, index |
-    if (song == input) || (index == input)
+    if (song == input.to_s) || (index == input.to_i)
       binding.pry
       selected_song = song
     end
