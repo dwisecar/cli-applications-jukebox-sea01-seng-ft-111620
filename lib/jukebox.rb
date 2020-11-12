@@ -1,12 +1,4 @@
-# # Add your code here
-# def say_hello(name)
-#   "Hi #{name}!"
-# end
- 
-# puts "Enter your name:"
-# users_name = gets.strip
- 
-# puts say_hello(users_name)
+require "pry"
 
 songs = [
   "Phoenix - 1901",
@@ -41,6 +33,7 @@ def play(songs)
   
   songs.each.with_index(1) do | song, index |
     if (song == input) || (index == input)
+      binding.pry
       selected_song = song
     end
   end
