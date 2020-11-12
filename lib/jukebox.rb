@@ -33,7 +33,7 @@ def play(songs)
   
   songs.each.with_index(1) do | song, index |
     if (song == input.to_s) || (index == input.to_i)
-      binding.pry
+      
       selected_song = song
     end
   end
