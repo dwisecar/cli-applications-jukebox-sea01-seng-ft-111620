@@ -54,7 +54,7 @@ def run
   puts "Please enter a command:"
   input = gets.strip
   
-  while input != "exit"
+  while input != "exit" do
   
 end
 
