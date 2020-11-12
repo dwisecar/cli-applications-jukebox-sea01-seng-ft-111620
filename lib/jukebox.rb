@@ -37,6 +37,9 @@ def play(songs)
   selected_song = ""
   puts "Please enter a song name or number:"
   input = gets.strip
+  
+  
+  
   songs.each do | song |
     if song == input
       selected_song = song
