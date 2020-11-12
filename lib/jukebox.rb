@@ -40,11 +40,13 @@ def play(songs)
   songs.each do | song |
     if song == input
       selected_song = song
+    end
   end
   if selected_song == ""
-    
-  
-  
+    puts "Invalid input, please try again"
+  else
+    puts "Playing #{selected_song}"
+  end
 end
 
 def exit_jukebox
